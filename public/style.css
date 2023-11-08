@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  display: grid;
+  height: 98svh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content auto auto;
+  grid-template-areas:
+    'header header header'
+    'form invade delete'
+    'quotes quotes quotes';
+  font-family: lato;
+  gap: 1rem;
+  background-image: linear-gradient(
+    to bottom,
+    #3f51b1 0%,
+    #5a55ae 13%,
+    #7b5fac 25%,
+    #8f6aae 38%,
+    #a86aa4 50%,
+    #cc6b8e 62%,
+    #f18271 75%,
+    #f3a469 87%,
+    #f7c978 100%
+  );
+  padding: 1vh 1rem;
+}
+form {
+  grid-area: form;
+}
+form * {
+  margin: 0.5rem;
+}
+button,
+input {
+  border: #3b868ef9 solid 1px;
+  border-radius: 4px;
+  color: #363476;
+  font-weight: 500;
+}
+button {
+  font-weight: 550;
+}
+
+h1 {
+  grid-area: header;
+  margin: 0;
+}
+.invade {
+  grid-area: invade;
+}
+.delete {
+  grid-area: delete;
+}
+div.quotes {
+  grid-area: quotes;
+}
+
+form,
+h1,
+.invade,
+.delete,
+div.quotes {
+  border-radius: 4px;
+  background: #ffffffbf;
+  backdrop-filter: blur(50px);
+  border: #3b868ef9 solid 1px;
+  padding: 1rem;
+  filter: drop-shadow(0 0 0 1rem #3b698ee7);
+  color: #363476;
+}
