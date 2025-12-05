@@ -22,8 +22,3 @@ Based on npm packages, we built a Star Wars-themed CRUD system.
 - Nodemon automatically refreshed our project while in development to save time
   and the effort of refreshing Node
 - Dotenv added to manage database credentials
-
-## Lessons Learned:
-
-It's better to leverage APIs than trying to reinvent the wheel. Also,
-double-check check your secrets are safe before pushing to GH!
